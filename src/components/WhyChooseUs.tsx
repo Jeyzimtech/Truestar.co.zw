@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { CheckCircle, Star, Clock, Heart, DollarSign } from "lucide-react";
+import { Award, Hammer, CalendarCheck, Handshake, Coins } from "lucide-react";
 
 const reasons = [
-  { icon: Star, title: "Experienced Professionals", desc: "Our team brings decades of combined experience in all aspects of construction." },
-  { icon: CheckCircle, title: "High-Quality Workmanship", desc: "We use premium materials and proven techniques for lasting results." },
-  { icon: Clock, title: "Reliable & Timely Delivery", desc: "We respect deadlines and deliver projects on schedule, every time." },
-  { icon: Heart, title: "Customer Satisfaction Focus", desc: "Your vision is our priority. We work closely with you at every stage." },
-  { icon: DollarSign, title: "Affordable & Transparent Pricing", desc: "Competitive rates with no hidden costs. Clear quotes from the start." },
+  { icon: Award, title: "Experienced Professionals", desc: "Our team brings decades of combined experience in all aspects of construction." },
+  { icon: Hammer, title: "High-Quality Workmanship", desc: "We use premium materials and proven techniques for lasting results." },
+  { icon: CalendarCheck, title: "Reliable & Timely Delivery", desc: "We respect deadlines and deliver projects on schedule, every time." },
+  { icon: Handshake, title: "Customer Satisfaction Focus", desc: "Your vision is our priority. We work closely with you at every stage." },
+  { icon: Coins, title: "Affordable & Transparent Pricing", desc: "Competitive rates with no hidden costs. Clear quotes from the start." },
 ];
 
 const WhyChooseUs = () => {
