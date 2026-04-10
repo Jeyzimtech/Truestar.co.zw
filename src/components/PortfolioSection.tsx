@@ -91,7 +91,7 @@ const PortfolioSection = () => {
               hidden: { opacity: 0 },
               show: {
                 opacity: 1,
-                transition: { staggerChildren: 0.1 }
+                transition: { staggerChildren: 0.04 }
               }
             }}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
@@ -107,7 +107,7 @@ const PortfolioSection = () => {
                     x: 0, 
                     rotate: 0, 
                     scale: 1, 
-                    transition: { type: "spring", bounce: 0.4, duration: 1.2 } 
+                    transition: { type: "spring", bounce: 0.4, duration: 0.5 } 
                   }
                 }}
                 className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 aspect-[4/3] transform-gpu"
