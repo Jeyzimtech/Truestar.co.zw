@@ -27,9 +27,9 @@ const Footer = () => {
       <div className="relative z-10 container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-10 mb-10">
           <div>
-            <div className="flex items-center gap-3">
-              <img src={logo} alt="TrueStar Construction" className="h-24 w-auto object-contain" />
-              <span className="text-primary-foreground font-display font-bold text-2xl tracking-wide">
+            <div className="flex items-center gap-3 flex-wrap">
+              <img src={logo} alt="TrueStar Construction" className="h-16 md:h-24 w-auto object-contain" />
+              <span className="text-primary-foreground font-display font-bold text-xl md:text-2xl tracking-wide">
                 TrueStar <span className="text-gold">Construction</span>
               </span>
             </div>

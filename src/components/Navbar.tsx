@@ -31,9 +31,9 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-4">
-        <a href="#home" className="flex items-center gap-3">
-          <img src={logo} alt="TrueStar Construction" className="h-24 w-auto object-contain" />
-          <span className="text-primary-foreground font-display font-bold text-2xl tracking-wide hidden lg:block">
+        <a href="#home" className="flex items-center gap-3 w-[75%] sm:w-auto">
+          <img src={logo} alt="TrueStar Construction" className="h-16 md:h-24 w-auto object-contain" />
+          <span className="text-primary-foreground font-display font-bold text-xl md:text-2xl tracking-wide hidden lg:block">
             TrueStar <span className="text-gold">Construction</span>
           </span>
         </a>
