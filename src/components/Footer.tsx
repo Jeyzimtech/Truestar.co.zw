@@ -29,9 +29,9 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 flex-shrink min-w-0">
               <img src={logo} alt="TrueStar Construction" className="h-10 sm:h-14 md:h-20 w-auto object-contain flex-shrink-0" />
-              <span className="text-primary-foreground font-display font-bold text-[1rem] leading-[1] sm:text-xl md:text-2xl tracking-wide flex flex-col sm:flex-row sm:gap-1.5 min-w-0">
-                <span className="truncate">TrueStar</span>
-                <span className="text-gold truncate">Construction</span>
+              <span className="text-primary-foreground font-display font-bold text-[0.85rem] sm:text-lg md:text-2xl tracking-wide flex flex-row items-center gap-1 whitespace-nowrap min-w-0">
+                <span>TrueStar</span>
+                <span className="text-gold">Construction</span>
               </span>
             </div>
             <p className="text-primary-foreground/60 mt-4 text-sm leading-relaxed">
