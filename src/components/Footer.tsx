@@ -27,10 +27,11 @@ const Footer = () => {
       <div className="relative z-10 container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-10 mb-10">
           <div>
-            <div className="flex items-center gap-3 flex-wrap">
-              <img src={logo} alt="TrueStar Construction" className="h-16 md:h-24 w-auto object-contain" />
-              <span className="text-primary-foreground font-display font-bold text-xl md:text-2xl tracking-wide">
-                TrueStar <span className="text-gold">Construction</span>
+            <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
+              <img src={logo} alt="TrueStar Construction" className="h-12 sm:h-16 md:h-24 w-auto object-contain" />
+              <span className="text-primary-foreground font-display font-bold text-[1.1rem] leading-[1.1] sm:text-xl md:text-2xl tracking-wide flex flex-col sm:flex-row sm:gap-1.5">
+                <span>TrueStar</span>
+                <span className="text-gold">Construction</span>
               </span>
             </div>
             <p className="text-primary-foreground/60 mt-4 text-sm leading-relaxed">

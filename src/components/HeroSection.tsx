@@ -14,7 +14,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-gold font-medium uppercase tracking-[0.3em] mb-4 text-xs sm:text-sm md:text-base"
+          className="text-gold font-medium uppercase tracking-widest mb-4 text-xs sm:text-sm md:text-base px-2"
         >
           Building Integrity | Quality & Trust
         </motion.p>
