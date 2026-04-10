@@ -84,32 +84,18 @@ const PortfolioSection = () => {
         <AnimatePresence mode="wait">
           <motion.div
             key={active}
-            initial="hidden"
-            animate={isVisible ? "show" : "hidden"}
-            exit="hidden"
-            variants={{
-              hidden: { opacity: 0 },
-              show: {
-                opacity: 1,
-                transition: { staggerChildren: 0.04 }
-              }
-            }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
           >
             {filtered.map((project, i) => (
               <motion.div
                 key={project.title}
-                variants={{
-                  hidden: { opacity: 0, y: 150, x: i % 2 === 0 ? -50 : 50, rotate: i % 3 === 0 ? -15 : i % 2 === 0 ? 15 : -5, scale: 0.4 },
-                  show: { 
-                    opacity: 1, 
-                    y: 0, 
-                    x: 0, 
-                    rotate: 0, 
-                    scale: 1, 
-                    transition: { type: "spring", bounce: 0.4, duration: 0.5 } 
-                  }
-                }}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, delay: Math.min(i * 0.05, 0.3) }}
                 className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 aspect-[4/3] transform-gpu"
               >
                 <img
