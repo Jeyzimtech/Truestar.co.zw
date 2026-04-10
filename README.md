@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# TrueStar Construction Website
 
 TODO: Document your project here
