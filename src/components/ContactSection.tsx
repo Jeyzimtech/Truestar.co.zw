@@ -16,21 +16,21 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     try {
       const response = await fetch("https://formsubmit.co/ajax/truestarconstruction2@gmail.com", {
         method: "POST",
         headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify({
-            Name: form.name,
-            Phone: form.phone,
-            Email: form.email,
-            Message: form.message,
-            _subject: `New Website Lead: ${form.name}`,
-            _template: "table"
+          Name: form.name,
+          Phone: form.phone,
+          Email: form.email,
+          Message: form.message,
+          _subject: `New Website Lead: ${form.name}`,
+          _template: "table"
         }),
       });
 
@@ -41,8 +41,8 @@ const ContactSection = () => {
         throw new Error("Failed to send");
       }
     } catch (error) {
-      toast({ 
-        title: "Error Sending Message", 
+      toast({
+        title: "Error Sending Message",
         description: "Please try again later or contact us directly via WhatsApp.",
         variant: "destructive"
       });
@@ -95,7 +95,7 @@ const ContactSection = () => {
           >
             {[
               { icon: MapPin, label: "Our Location", value: "TrueStar Construction\nBorrowdale Hatcliffe 7835\nAlong Domboshava Road\nHarare, Zimbabwe" },
-              { icon: Phone, label: "Phone", value: "+263 71 636 9870", href: "https://wa.me/263716369870" },
+              { icon: Phone, label: "Phone", value: "+263 71 636 9870/+263 77 557 0531", href: "https://wa.me/263716369870" },
               { icon: Mail, label: "Email", value: "truestarconstruction2@gmail.com", href: "mailto:truestarconstruction2@gmail.com" },
             ].map((item) => (
               <div key={item.label} className="flex items-start gap-4">
