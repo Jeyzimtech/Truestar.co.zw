@@ -94,23 +94,46 @@ const ContactSection = () => {
             className="space-y-5 sm:space-y-6"
           >
             {[
-              { icon: MapPin, label: "Our Location", value: "TrueStar Construction\nBorrowdale Hatcliffe 7835\nAlong Domboshava Road\nHarare, Zimbabwe" },
-              { icon: Phone, label: "Phone", value: "+263 71 636 9870/+263 77 557 0531", href: "https://wa.me/263716369870" },
-              { icon: Mail, label: "Email", value: "truestarconstruction2@gmail.com", href: "mailto:truestarconstruction2@gmail.com" },
+              { 
+                icon: MapPin, 
+                label: "Our Location", 
+                content: (
+                  <p className="text-muted-foreground text-xs sm:text-sm whitespace-pre-line">
+                    TrueStar Construction{"\n"}Borrowdale Hatcliffe 7835{"\n"}Along Domboshava Road{"\n"}Harare, Zimbabwe
+                  </p>
+                )
+              },
+              { 
+                icon: Phone, 
+                label: "Phone", 
+                content: (
+                  <div className="flex flex-col gap-1.5">
+                    <a href="https://wa.me/263716369870" target="_blank" rel="noopener noreferrer" className="block text-muted-foreground hover:text-gold hover:underline transition-colors text-xs sm:text-sm">
+                      +263 71 636 9870 (WhatsApp / Call)
+                    </a>
+                    <a href="tel:+263775570531" className="block text-muted-foreground hover:text-gold hover:underline transition-colors text-xs sm:text-sm">
+                      +263 77 557 0531 (Alternative)
+                    </a>
+                  </div>
+                ) 
+              },
+              { 
+                icon: Mail, 
+                label: "Email", 
+                content: (
+                  <a href="mailto:truestarconstruction2@gmail.com" className="block text-muted-foreground hover:text-gold hover:underline transition-colors text-xs sm:text-sm">
+                    truestarconstruction2@gmail.com
+                  </a>
+                )
+              },
             ].map((item) => (
               <div key={item.label} className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-gold-gradient flex items-center justify-center shrink-0">
                   <item.icon className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground text-sm sm:text-base">{item.label}</p>
-                  {item.href ? (
-                    <a href={item.href} target="_blank" rel="noopener noreferrer" className="block text-muted-foreground hover:text-gold hover:underline transition-colors text-xs sm:text-sm whitespace-pre-line">
-                      {item.value}
-                    </a>
-                  ) : (
-                    <p className="text-muted-foreground text-xs sm:text-sm whitespace-pre-line">{item.value}</p>
-                  )}
+                  <p className="font-semibold text-foreground text-sm sm:text-base mb-0.5">{item.label}</p>
+                  {item.content}
                 </div>
               </div>
             ))}
